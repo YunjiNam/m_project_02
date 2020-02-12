@@ -167,19 +167,21 @@ header {
 	border: none;
 	outline: none;
 	padding: 12px 24px;
-	background-color: #F0352E;
+	border: 1px solid #2d2d2d;
 	border-radius: 12px;
 	margin-top: 20px;
 	font-size: 13px;
 	font-weight: 700;
-	color: #ffffff;
+	color: #2d2d2d;
 	cursor: pointer;
+	transition-duration: 0.4s;
 }
 
-/*.cgv_tv_btn:hover {
-	background-color: #F25C05;
+.cgv_tv_btn:hover {
+	background-color: #F0352E;
 	color: #ffffff;
-}*/
+	border: none;
+}
 
 .ocn_tv_btn {
 	/*width: 160px;
