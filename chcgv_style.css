@@ -12,7 +12,7 @@
 .cover {
 	height: 100%;
     position: relative;
-	background-image: url("static/bg_img.png");
+	background-image: url("static/cgv_bg_color_edit1.png");
 	background-size: auto;
     background-position: center;
 }
@@ -116,34 +116,15 @@ header {
 	display: inline-block;
 }
 
-.main_img1 {
-	/*display: inline-block;*/
-	float: right;
-	width: 600px;
-	margin-top: 40px;
-}
-
-.NOP {
-	font-weight: 700;
-	font-size: 20px;
-	color: #2d2d2d;
-	margin-top: 85px;
-}
-
-.rolling_wrap {
-	width: 400px;
-	height: 70px;
-	border: 2px solid #8E28BD;
+.cgv_tv_btn {
+	width: 160px;
+	height: 55px;
+	background-color: #F03430;
 	border-radius: 10px;
 	margin-top: 20px;
-	/*box-shadow: 1px 1px 2px #656565;*/
-}
-.rolling_wrap_content {
-	font-weight: 400;
-	font-size: 13px;
-	color: #2d2d2d;
-	list-style: none;
-	margin:25px 54px;
+	font-size: 15px;
+	font-weight: 700;
+	color:#ffffff;
 }
 
 

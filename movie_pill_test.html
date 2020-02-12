@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie Table</title>
+	<link rel="stylesheet" href="mo_style_pill.css">
+
+	<script type="text/javascript">
+		function openCity(evt, channelname) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", " ");
+			}
+
+			document.getElementById(channelname).style.display = "inline-block";
+			evt.currentTarget.className += " active";
+		}
+
+		function go_chcgv() {
+
+		}
+		
+	</script>
+</head>
+<body>
+	<div class="cover">
+		<header>
+			<nav>
+				<!-- <div class="nav__link">
+					<a class="active" href="#home">Home</a>
+					<a href="#chcgv">CH CGV</a>
+					<a href="#ocn">OCN</a>
+					<a href="#superaction">Super Action</a>
+					<a href="#moviechart">Movie Chart</a>
+				</div> -->
+				<div class="tab">
+					<button class="tablinks" onclick="openCity(event, 'home')">Home</button>
+					<button class="tablinks" onclick="openCity(event, 'chcgv')">CH CGV</button>
+					<button class="tablinks" onclick="openCity(event, 'ocn')">OCN</button>
+					<button class="tablinks" onclick="openCity(event, 'superaction')">Super Action</button>
+					<button class="tablinks" onclick="openCity(event, 'moviechart')">Movie Chart</button>
+				</div>
+			</nav>
+		</header>
+		<div class="content">
+			<div class="movietable_bg">
+				<div id="home" class="tabcontent">
+					<div class="main_text">
+						<div class="title">
+							<h3>Movie Table</h3>
+						</div>
+						<div class="sub_title">
+							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
+							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
+						</div>
+						<div class="NOP">
+							<p>Now On Play</p>
+						</div>
+						<div class="rolling_wrap">
+							<ul class="rolling_wrap_content">
+								<li>CGV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스타워즈 에피소드 IV: 새로운 희망</li>
+							</ul>
+						</div>
+					</div>
+					<div class="main_img1">
+						<img src="static/main_img_movie.png">
+					</div>
+				</div>
+			</div>
+<!-- CH CGV -->
+			<div class="chcgv_bg">
+				<div id="chcgv" class="tabcontent">
+					<div class="main_text">
+						<div class="title">
+							<h3>CH CGV</h3>
+						</div>
+						<div class="sub_title">
+							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
+							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
+						</div>
+						<div id="go_ch_btn">
+							<button class="cgv_tv_btn" onclick="go_chcgv()">실시간 TV 보기</button>
+						</div>
+						
+					</div>
+					<div class="chcgv_img">
+						<img src="">
+					</div>
+				</div>
+			</div>
+<!-- OCN -->
+			<div class="ocn_bg">
+				<div id="ocn" class="tabcontent">
+					<div class="main_text">
+						<div class="title">
+							<h3>OCN</h3>
+						</div>
+						<div class="sub_title">
+							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
+							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
+						</div>
+						<div id="go_ch_btn">
+							<button class="ocn_tv_btn" onclick="go_ocn()">실시간 TV 보기</button>
+						</div>
+						
+					</div>
+					<div class="chcgv_img">
+						<img src="">
+					</div>
+				</div>
+			</div>
+<!-- Super Action -->
+			<div class="superaction_bg">
+				<div id="superaction" class="tabcontent">
+					<div class="main_text">
+						<div class="title">
+							<h3>Super Action</h3>
+						</div>
+						<div class="sub_title">
+							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
+							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
+						</div>
+						<div id="go_ch_btn">
+							<button class="superaction_tv_btn" onclick="go_superaction()">실시간 TV 보기</button>
+						</div>
+						
+					</div>
+					<div class="chcgv_img">
+						<img src="">
+					</div>
+				</div>
+			</div>
+<!-- Movie Chart -->
+			<div class="moviechart_bg">
+				<div id="moviechart" class="tabcontent">
+					<div class="main_text">
+						<div class="title">
+							<h3>Movie Chart</h3>
+						</div>
+						<div class="sub_title">
+							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
+							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
+						</div>
+						<div id="go_ch_btn">
+							<button class="moviechart_btn" onclick="go_movichart()">예매하러 가기</button>
+						</div>
+						
+					</div>
+					<div class="chcgv_img">
+						<img src="">
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+</html>
