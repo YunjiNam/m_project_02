@@ -209,7 +209,6 @@ header {
 	cursor: pointer;
 	border: 2px solid #FFB72F;
 	transition-duration: 0.5s;
-	/*background-image: url("static/tv_btn1.png");*/
 }
 .ocn_tv_btn:hover {
 	background-image: url("static/tv_btn1.png");
@@ -217,8 +216,7 @@ header {
 }
 
 .superaction_tv_btn {
-	/*width: 160px;
-	height: 55px;*/
+
 	outline: none;
 	padding: 12px 24px;
 	border-radius: 12px;
@@ -229,7 +227,6 @@ header {
 	cursor: pointer;
 	border: 2px solid #DC1E1E;
 	transition-duration: 0.5s;
-	/*background-image: url("static/superaction_tv_btn.png");*/
 }
 .superaction_tv_btn:hover {
 	background-image: url("static/superaction_tv_btn.png");
@@ -250,7 +247,6 @@ header {
 	color: #2d2d2d;
 	cursor: pointer;
 	transition-duration: 0.5s;
-	/*background-image: url("static/moviechart_tv_btn1.png");*/
 }
 .moviechart_btn:hover {
 	background-image: url("static/moviechart_tv_btn1.png");
