@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Movie Table</title>
 	<link rel="stylesheet" href="mo_style_pill.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		function openCity(evt, channelname) {
 			var i, tabcontent, tablinks;
@@ -27,6 +27,25 @@
 
 		}
 		
+		// 텍스트 롤링
+
+		$(document).ready(function(){
+			var height = $(".notice").height();
+			var num = $(".rolling_wrap_content li").length;
+			var max = height * num;
+			var move = 0;
+			function notice_rolling(){
+				move += height;
+				$(".rolling_wrap_content").animate({"top":-move},600,function(){
+					if( move >= max ){
+						$(this).css("top",0);
+						move = 0;
+					};
+				});
+			};
+			notice_rolling_off = setInterval(notice_rolling,2500);
+			$(".rolling_wrap_content").append($(".rolling_wrap_content li").first().clone());
+		})
 	</script>
 </head>
 <body>
@@ -35,7 +54,7 @@
 		<header>
 			<nav>
 				<div class="tab">
-					<button class="tablinks" onclick="openCity(event, 'home')">Home</button>
+					<button class="tablinks active" onclick="openCity(event, 'home')">Home</button>
 					<button class="tablinks" onclick="openCity(event, 'chcgv')">CH CGV</button>
 					<button class="tablinks" onclick="openCity(event, 'ocn')">OCN</button>
 					<button class="tablinks" onclick="openCity(event, 'superaction')">Super Action</button>
@@ -59,11 +78,19 @@
 							<p>Now On Play</p>
 						</div>
 						<div class="rolling_wrap">
-							<ul class="rolling_wrap_content">
-								<li>CGV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스타워즈 에피소드 IV: 새로운 희망</li>
-								<li>OCN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스타워즈 에피소드 IV: 새로운 희망</li>
-								<li>Super Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스타워즈 에피소드 IV: 새로운 희망</li>
-							</ul>
+							<div class="notice">
+								<ul class="rolling_wrap_content">
+									<li>
+										<a href="#">CH CGV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스타워즈 에피소드 IV: 새로운 희망</a>
+									</li>
+									<li>
+										<a href="#">OCN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스타워즈 에피소드 IV: 새로운 희망</a>
+									</li>
+									<li>
+										<a href="#">Super Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스타워즈 에피소드 IV: 새로운 희망</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="main_img1">
@@ -85,7 +112,7 @@
 							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
 						</div>
 						<div id="go_ch_btn">
-							<button class="cgv_tv_btn" onclick="go_chcgv()">실시간 TV 보기</button>
+							<button class="cgv_tv_btn" onclick="location.href='https://www.tving.com/live/player/C04601'">실시간 TV 보기</button>
 						</div>
 						
 					</div>
@@ -108,7 +135,7 @@
 							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
 						</div>
 						<div id="go_ch_btn">
-							<button class="ocn_tv_btn" onclick="go_ocn()">실시간 TV 보기</button>
+							<button class="ocn_tv_btn" onclick="location.href='https://www.tving.com/live/player/C07381'" >실시간 TV 보기</button>
 						</div>
 						
 					</div>
@@ -131,7 +158,7 @@
 							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
 						</div>
 						<div id="go_ch_btn">
-							<button class="superaction_tv_btn" onclick="go_superaction()">실시간 TV 보기</button>
+							<button class="superaction_tv_btn" onclick="location.href='https://www.tving.com/live/player/C07382'">실시간 TV 보기</button>
 						</div>
 						
 					</div>
@@ -154,7 +181,7 @@
 							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
 						</div>
 						<div id="go_ch_btn">
-							<button class="moviechart_btn" onclick="go_movichart()">예매하러 가기</button>
+							<button class="moviechart_btn" onclick="location.href='https://movie.naver.com/movie/running/current.nhn'">예매하러 가기</button>
 						</div>
 						
 					</div>

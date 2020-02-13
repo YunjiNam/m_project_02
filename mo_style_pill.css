@@ -105,14 +105,29 @@ header {
 	border-radius: 10px;
 	margin-top: 20px;
 }
+
+.notice {
+	width: 100%;
+	height: 36px;
+	margin: 15px 0;
+	overflow: hidden;
+}
 .rolling_wrap_content {
 	font-weight: 400;
 	font-size: 13px;
 	color: #2d2d2d;
 	list-style: none;
-	margin:25px 54px;
+	margin:0 54px;
+	position: relative;
+	height: auto;
+	width: 100%;
 }
 
+.rolling_wrap_content li {
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+}
 #chcgv {
 	display: none;
 }
@@ -167,66 +182,83 @@ header {
 	border: none;
 	outline: none;
 	padding: 12px 24px;
-	border: 1px solid #2d2d2d;
+	border: 2px solid #F0352E;
 	border-radius: 12px;
 	margin-top: 20px;
 	font-size: 13px;
 	font-weight: 700;
 	color: #2d2d2d;
 	cursor: pointer;
-	transition-duration: 0.4s;
+	transition-duration: 0.5s;
 }
-
 .cgv_tv_btn:hover {
 	background-color: #F0352E;
-	color: #ffffff;
-	border: none;
+	color: white;
 }
 
 .ocn_tv_btn {
 	/*width: 160px;
 	height: 55px;*/
-	border: none;
 	outline: none;
 	padding: 12px 24px;
 	border-radius: 12px;
 	margin-top: 20px;
 	font-size: 13px;
 	font-weight: 700;
-	color: #ffffff;
+	color: #2d2d2d;
 	cursor: pointer;
-	/*background-color: #FFB72F;*/
+	border: 2px solid #FFB72F;
+	transition-duration: 0.5s;
+	/*background-image: url("static/tv_btn1.png");*/
+}
+.ocn_tv_btn:hover {
 	background-image: url("static/tv_btn1.png");
+	color: white;
 }
 
 .superaction_tv_btn {
 	/*width: 160px;
 	height: 55px;*/
-	border: none;
 	outline: none;
 	padding: 12px 24px;
 	border-radius: 12px;
 	margin-top: 20px;
 	font-size: 13px;
 	font-weight: 700;
-	color: #ffffff;
+	color: #2d2d2d;
 	cursor: pointer;
-	/*background-color: #FFB72F;*/
+	border: 2px solid #DC1E1E;
+	transition-duration: 0.5s;
+	/*background-image: url("static/superaction_tv_btn.png");*/
+}
+.superaction_tv_btn:hover {
 	background-image: url("static/superaction_tv_btn.png");
+	color: white;
+	
 }
 
 .moviechart_btn {
 	/*width: 160px;
 	height: 55px;*/
-	border: none;
+	border: 2px solid #A31CF8;
 	outline: none;
 	padding: 12px 24px;
 	border-radius: 12px;
 	margin-top: 20px;
 	font-size: 13px;
 	font-weight: 700;
-	color: #ffffff;
+	color: #2d2d2d;
 	cursor: pointer;
-	/*background-color: #FFB72F;*/
-	background-image: url("static/moviechart_tv_btn1.png");
+	transition-duration: 0.5s;
+	/*background-image: url("static/moviechart_tv_btn1.png");*/
 }
+.moviechart_btn:hover {
+	background-image: url("static/moviechart_tv_btn1.png");
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+
