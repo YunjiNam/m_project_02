@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="mo_style_pill.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
+
+		// 탭 바 클릭 이벤트
+
 		function openCity(evt, channelname) {
 			var i, tabcontent, tablinks;
 
@@ -21,10 +24,6 @@
 
 			document.getElementById(channelname).style.display = "inline-block";
 			evt.currentTarget.className += " active";
-		}
-
-		function go_chcgv() {
-
 		}
 		
 		// 텍스트 롤링
@@ -45,12 +44,13 @@
 			};
 			notice_rolling_off = setInterval(notice_rolling,2500);
 			$(".rolling_wrap_content").append($(".rolling_wrap_content li").first().clone());
+
 		})
 	</script>
 </head>
 <body>
 	<div class="cover">
-
+		
 		<header>
 			<nav>
 				<div class="tab">
@@ -62,8 +62,11 @@
 				</div>
 			</nav>
 		</header>
-
+		
 		<div class="content">
+
+			<!-- Movie Table -->
+
 			<div class="movietable_bg">
 				<div id="home" class="tabcontent">
 					<div class="main_text">
@@ -99,7 +102,7 @@
 				</div>
 			</div>
 
-<!-- CH CGV -->
+			<!-- CH CGV -->
 
 			<div class="chcgv_bg">
 				<div id="chcgv" class="tabcontent">
@@ -122,7 +125,7 @@
 				</div>
 			</div>
 
-<!-- OCN -->
+			<!-- OCN -->
 
 			<div class="ocn_bg">
 				<div id="ocn" class="tabcontent">
@@ -145,7 +148,7 @@
 				</div>
 			</div>
 
-<!-- Super Action -->
+			<!-- Super Action -->
 
 			<div class="superaction_bg">
 				<div id="superaction" class="tabcontent">
@@ -168,7 +171,7 @@
 				</div>
 			</div>
 
-<!-- Movie Chart -->
+			<!-- Movie Chart -->
 
 			<div class="moviechart_bg">
 				<div id="moviechart" class="tabcontent">
