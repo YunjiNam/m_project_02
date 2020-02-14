@@ -269,16 +269,17 @@ a {
 }
 
 .table_layout {
-	width: 700px;
+	width: 740px;
 	/*height: auto;*/
 	text-align: center;
 	background-color: #ffffff;
-	opacity: 0.86;
-	box-shadow: 2px 2px 15px 1px #8c8c8c;
+	/*opacity: 0.86;*/
+	/*box-shadow: 1px 1px 10px 1px #b3b3b3;*/
 	margin: 60px 200px 0px 0px;
 	border-radius: 10px;
-	/*border-left: 2px solid #8c8c8c;*/
-	padding:5px;
+	border: 2px solid #F0352E;
+	padding: 20px;
+
 }
 
 table th {
@@ -295,7 +296,6 @@ table td {
 	font-weight: 400;
 	border-bottom: 1px solid #f2f2f2;
 }
-
 
 
 
