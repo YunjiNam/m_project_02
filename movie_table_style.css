@@ -85,6 +85,12 @@ header {
 	display: inline-block;
 }
 
+.main_text_ch {
+	padding-top: 300px;
+	padding-left: 200px;
+	padding-bottom: 200px;
+	display: inline-block;
+}
 .main_img1 {
 	float: right;
 	width: 800px;
@@ -259,31 +265,33 @@ a {
 
 .chcgv_table {
 	display: inline-block;
+	float: right;
 }
 
 .table_layout {
 	width: 700px;
-	height: auto;
+	/*height: auto;*/
 	text-align: center;
 	background-color: #ffffff;
 	opacity: 0.86;
 	box-shadow: 2px 2px 15px 1px #8c8c8c;
-	margin-left: 150px;
+	margin: 60px 200px 0px 0px;
 	border-radius: 10px;
-	padding:10px;
+	/*border-left: 2px solid #8c8c8c;*/
+	padding:5px;
 }
 
 table th {
 	border-top: 1px solid #f2f2f2;
 	border-bottom: 1px solid #f2f2f2;
-	padding: 15px 0px;
+	padding: 13px 0px;
 	font-size: 12px;
 	font-weight: 500;
 }
 
 table td {
-	padding: 10px 5px;
-	font-size: 12px;
+	padding: 6px 5px;
+	font-size: 10px;
 	font-weight: 400;
 	border-bottom: 1px solid #f2f2f2;
 }
