@@ -48,6 +48,7 @@ header {
 	margin:0px 110px;
 	font-weight: 700;
 	font-size: 15px;
+	color: #8c8c8c;
 }
 
 .tab button:hover {
@@ -62,22 +63,27 @@ header {
 
 .tab button.active:nth-child(1) {
 	border-bottom: 5px solid #8E28BD;
+	color: #2d2d2d;
 }
 
 .tab button.active:nth-child(2) {
 	border-bottom: 5px solid #F0352E;
+	color: #2d2d2d;
 }
 
 .tab button.active:nth-child(3) {
 	border-bottom: 5px solid #FFB72F;
+	color: #2d2d2d;
 }
 
 .tab button.active:nth-child(4) {
 	border-bottom: 5px solid #DC1E1E;
+	color: #2d2d2d;
 }
 
 .tab button.active:nth-child(5) {
 	border-bottom: 5px solid #A31CF8;
+	color: #2d2d2d;
 }
 
 .tabcontent {
@@ -136,6 +142,7 @@ header {
 	float: right;
 	width: 800px;
 	/*margin-top: 40px;*/
+	display: inline-block;
 }
 
 /* ----------------------------------------------Now On Play 현재 방영 영화 박스 */
