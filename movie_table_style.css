@@ -8,6 +8,25 @@
 	color: #2d2d2d;
 
 }
+
+#chcgv {
+	display: none;
+}
+
+#ocn {
+	display: none;
+}
+
+#superaction {
+	display: none;
+}
+
+#moviechart {
+	display: none;
+}
+
+/* ---------------------------------------------- top tab btn  */
+
 header {
 	display: flex;
 	flex-direction: column;
@@ -35,8 +54,30 @@ header {
 	border-bottom: 5px solid #ddd;
 }
 
-.tab button.active {
+/*.tab button.active {
 	border-bottom: 5px solid #2d2d2d;
+}*/
+
+/* ----------------------------------------------tab btn hover active 밑줄 색 변경 */
+
+.tab button.active:nth-child(1) {
+	border-bottom: 5px solid #8E28BD;
+}
+
+.tab button.active:nth-child(2) {
+	border-bottom: 5px solid #F0352E;
+}
+
+.tab button.active:nth-child(3) {
+	border-bottom: 5px solid #FFB72F;
+}
+
+.tab button.active:nth-child(4) {
+	border-bottom: 5px solid #DC1E1E;
+}
+
+.tab button.active:nth-child(5) {
+	border-bottom: 5px solid #A31CF8;
 }
 
 .tabcontent {
@@ -97,6 +138,8 @@ header {
 	/*margin-top: 40px;*/
 }
 
+/* ----------------------------------------------Now On Play 현재 방영 영화 박스 */
+
 .NOP {
 	font-weight: 700;
 	font-size: 20px;
@@ -134,21 +177,8 @@ header {
 	height: 36px;
 	line-height: 36px;
 }
-#chcgv {
-	display: none;
-}
 
-#ocn {
-	display: none;
-}
-
-#superaction {
-	display: none;
-}
-
-#moviechart {
-	display: none;
-}
+/* ----------------------------------------------각 채널 메뉴 background img */
 
 .chcgv_bg {
 	height: 100%;
@@ -181,6 +211,8 @@ header {
 	background-size: auto;
     background-position: center;
 }
+
+/* ----------------------------------------------각 채널 실시간 tv 보러가기 btn  */
 
 .cgv_tv_btn {
 	/*width: 160px;
@@ -263,6 +295,8 @@ a {
 	text-decoration: none;
 }
 
+/* ---------------------------------------------- 각 채널 편성표 테이블 디자인  */
+
 .chcgv_table {
 	display: inline-block;
 	float: right;
@@ -297,7 +331,7 @@ table td {
 	border-bottom: 1px solid #f2f2f2;
 }
 
-
+/* ----------------------------------------------  */
 
 
 
