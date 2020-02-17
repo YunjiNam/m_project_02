@@ -9,7 +9,7 @@
 
 		// 탭 바 클릭 이벤트
 
-		function open_chennel(evt, channelname) {
+		function open_chennel(event, channelname) {
 			var i, tabcontent, tablinks;
 
 			tabcontent = document.getElementsByClassName("tabcontent");
@@ -23,7 +23,7 @@
 			}
 
 			document.getElementById(channelname).style.display = "inline-block";
-			evt.currentTarget.className += " active";
+			event.currentTarget.className += " active";
 		}
 		
 		// 텍스트 롤링
@@ -100,40 +100,76 @@
 							</div>
 						</div>
 					</div>
-					<div class="main_img1">
-						<!-- <img src="static/main_img_movie.png"> -->
-						<div style="position:absolute;">
+					<!-- <img src="static/main_img_movie.png"> -->
+					<!-- <div class="main_img1">
+						<div id="camera_i" style="position:absolute;">
 							<div style="position: relative; top:0px; left:0px;">
 								<img  id="camera_i" src="static/main_img_camera.png">
 							</div>
 						</div>
-						<div style="position:absolute;">
+						<div class="ticket_i" style="position:absolute;">
 							<div style="position: relative; top:0px; left:0px;">
 								<img src="static/main_img_ticket_c.png">
 							</div>
 						</div>
-						<div style="position:absolute;">
+						<div class="ticket_i" style="position:absolute;">
 							<div style="position: relative; top:0px; left:0px;">
 								<img src="static/main_img_ticket.png">
 							</div>
 						</div>
-						<div style="position:absolute;">
+						<div id="skittles_i" style="position:absolute;">
 							<div style="position: relative; top:0px; left:0px;">
 								<img src="static/main_img_skittles.png">
 							</div>
 						</div>
-						<div style="position:absolute;">
-							<div style="position: relative; top:0px; left:0px;">
-								<img src="static/main_img_popcorn.png">
-							</div>
-						</div>
-						<div style="position:absolute;">
+						<div id="toy_i" style="position:absolute;">
 							<div style="position: relative; top:0px; left:0px;">
 								<img src="static/main_img_toy.png">
 							</div>
 						</div>
+						<div id="popcorn_i" style="position:absolute;">
+							<div style="position: relative; top:0px; left:0px;">
+								<img src="static/main_img_popcorn.png">
+							</div>
+						</div>
 
+					</div> -->
+					<!-- ------------------------- -->
+					
+						<!-- <img src="static/main_img_movie.png"> -->
+					
+					<div id="camera_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img  id="camera_i" src="static/main_img_camera_res.png">
+						</div>
 					</div>
+					<div class="ticket_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/main_img_ticket_c_res.png">
+						</div>
+					</div>
+					<div class="ticket_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/main_img_ticket_res.png">
+						</div>
+					</div>
+					<div id="skittles_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/main_img_skittles_res.png">
+						</div>
+					</div>
+					<div id="toy_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/main_img_toy_res.png">
+						</div>
+					</div>
+					<div id="popcorn_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/main_img_popcorn_res.png">
+						</div>
+					</div>
+
+					
 				</div>
 			</div>
 

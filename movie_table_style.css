@@ -138,12 +138,12 @@ header {
 	padding-bottom: 200px;
 	display: inline-block;
 }
-.main_img1 {
+/*.main_img1 {
 	float: right;
 	width: 800px;
-	/*margin-top: 40px;*/
 	display: inline-block;
-}
+	cursor: pointer;
+}*/
 
 /* ----------------------------------------------Now On Play 현재 방영 영화 박스 */
 
@@ -340,13 +340,79 @@ table td {
 
 /* ----------------------------------------------  */
 
+/*.main_img1 {
+	float: right;
+	width: 800px;
+	margin-top: 40px;
+	display: inline-block;
+	cursor: pointer;
+}*/
 
+/*.main_img1:hover {
+	transform: scale( 1.05 );
+	transition-duration: 0.8s;
+}*/
 
+#camera_i {
+	float: right;
+	width: 570px;
+	margin: 0px 0px 100px 400px;
+	display: inline-block;
+	cursor: pointer;
+}
+/*#camera_i:hover {
+	transform: scale( 1.02 );
+	transition-duration: 0.8s;
+}*/
 
+#popcorn_i {
+	float: right;
+	width: 500px;
+	margin: 380px 0px 0px 500px;
+	display: inline-block;
+	cursor: pointer;
+}
+/*#popcorn_i:hover {
+	transform: scale( 1.02 );
+	transition-duration: 0.8s;
+}*/
 
+#skittles_i {
+	float: right;
+	width: 300px;
+	margin: 580px 0px 0px 330px;
+	display: inline-block;
+	cursor: pointer;
+}
+/*#skittles_i:hover {
+	transform: scale( 1.04 );
+	transition-duration: 0.8s;
+}*/
 
+#toy_i {
+	float: right;
+	width: 300px;
+	margin: 430px 0px 0px 330px;
+	display: inline-block;
+	cursor: pointer;
+}
+/*#toy_i:hover {
+	transform: scale( 1.04 );
+	transition-duration: 0.8s;
+}*/
 
+.ticket_i {
+	float: right;
+	width: 300px;
+	margin: 470px 0px 0px 230px;
+	display: inline-block;
+	cursor: pointer;
+}
 
+.img_move:hover {
+	transform: scale( 1.02 );
+	transition-duration: 0.8s;
+}
 
 
 
