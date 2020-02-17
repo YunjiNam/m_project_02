@@ -360,10 +360,7 @@ table td {
 	display: inline-block;
 	cursor: pointer;
 }
-/*#camera_i:hover {
-	transform: scale( 1.02 );
-	transition-duration: 0.8s;
-}*/
+
 
 #popcorn_i {
 	float: right;
@@ -372,10 +369,7 @@ table td {
 	display: inline-block;
 	cursor: pointer;
 }
-/*#popcorn_i:hover {
-	transform: scale( 1.02 );
-	transition-duration: 0.8s;
-}*/
+
 
 #skittles_i {
 	float: right;
@@ -384,10 +378,7 @@ table td {
 	display: inline-block;
 	cursor: pointer;
 }
-/*#skittles_i:hover {
-	transform: scale( 1.04 );
-	transition-duration: 0.8s;
-}*/
+
 
 #toy_i {
 	float: right;
@@ -396,10 +387,7 @@ table td {
 	display: inline-block;
 	cursor: pointer;
 }
-/*#toy_i:hover {
-	transform: scale( 1.04 );
-	transition-duration: 0.8s;
-}*/
+
 
 .ticket_i {
 	float: right;
