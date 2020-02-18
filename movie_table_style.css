@@ -96,7 +96,7 @@ header {
 .movietable_bg {
 	height: 100%;
     position: relative;
-	background-image: url("static/mainbg_img2.png");
+	background-image: url("static/img/mainbg_img2.png");
 	background-size: auto;
     background-position: center;
 }
@@ -190,7 +190,7 @@ header {
 .chcgv_bg {
 	height: 100%;
     position: relative;
-	background-image: url("static/chcgvbg_img2.png");
+	background-image: url("static/img/chcgvbg_img2.png");
 	background-size: auto;
     background-position: center;
 }
@@ -198,7 +198,7 @@ header {
 .ocn_bg {
 	height: 100%;
     position: relative;
-	background-image: url("static/ocnbg_img2.png");
+	background-image: url("static/img/ocnbg_img2.png");
 	background-size: auto;
     background-position: center;
 }
@@ -206,7 +206,7 @@ header {
 .superaction_bg {
 	height: 100%;
     position: relative;
-	background-image: url("static/superactionbg_img2.png");
+	background-image: url("static/img/superactionbg_img2.png");
 	background-size: auto;
     background-position: center;
 }
@@ -214,7 +214,7 @@ header {
 .moviechart_bg {
 	height: 100%;
     position: relative;
-	background-image: url("static/moviechartbg_img2.png");
+	background-image: url("static/img/moviechartbg_img2.png");
 	background-size: auto;
     background-position: center;
 }
@@ -256,7 +256,7 @@ header {
 	transition-duration: 0.5s;
 }
 .ocn_tv_btn:hover {
-	background-image: url("static/tv_btn1.png");
+	background-image: url("static/img/tv_btn1.png");
 	color: white;
 }
 
@@ -274,7 +274,7 @@ header {
 	transition-duration: 0.5s;
 }
 .superaction_tv_btn:hover {
-	background-image: url("static/superaction_tv_btn.png");
+	background-image: url("static/img/superaction_tv_btn.png");
 	color: white;
 	
 }
@@ -294,7 +294,7 @@ header {
 	transition-duration: 0.5s;
 }
 .moviechart_btn:hover {
-	background-image: url("static/moviechart_tv_btn1.png");
+	background-image: url("static/img/moviechart_tv_btn1.png");
 	color: white;
 }
 
