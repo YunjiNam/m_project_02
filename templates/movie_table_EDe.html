@@ -3,42 +3,43 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Movie Table</title>
-	<link rel="stylesheet" href="../static/movie_table_pro_style.css">
+	<link rel="stylesheet" href="../static/movie_table_EDe_style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
+		// $(document).ready(function(){
+		// 	listing();
 
 
-			function click() {
-				$.ajax({
-					type: "GET",
-					url: "/list",
-					data: {},
-					success: function(response){
-						if (response['result'] == 'success') {
-							let lists = response['lists'];
-							console.log(lists);
-							for ( let i = 0; i < lists.length; i++) {
-								make_table(lists[i]['w_time'],lists[i]['title'],lists[i]['rating'],lists[i]['r_time'])
-							}
-						} else {
-							alert('편성표를 받아오지 못했습니다.');
-						}
-					}
-				})
-			}
+		// 	function cgv_click() {
+		// 		$.ajax({
+		// 			type: "GET",
+		// 			url: "/list",
+		// 			data: {},
+		// 			success: function(response){
+		// 				if (response['result'] == 'success') {
+		// 					let lists = response['lists'];
+		// 					console.log(lists);
+		// 					for ( let i = 0; i < lists.length; i++) {
+		// 						make_table(lists[i]['w_time'],lists[i]['title'],lists[i]['rating'],lists[i]['r_time'])
+		// 					}
+		// 				} else {
+		// 					alert('편성표를 받아오지 못했습니다.');
+		// 				}
+		// 			}
+		// 		})
+		// 	}
 
-			function make_table(w_time,title,rating,r_time) {
-				let temp_html = '<tr>\
-									<td class="table_time">'+w_time+'</td>\
-									<td class="table_title">'+title+'</td>\
-									<td class="table_age">'+rating+'</td>\
-									<td class="table_running_time">'+r_time+'</td>\
-								</tr>';
-				$('#chcgv_list').append(temp_html);
-			}
+		// 	function make_table(w_time,title,rating,r_time) {
+		// 		let temp_html = '<tr>\
+		// 							<td class="table_time">'+w_time+'</td>\
+		// 							<td class="table_title">'+title+'</td>\
+		// 							<td class="table_age">'+rating+'</td>\
+		// 							<td class="table_running_time">'+r_time+'</td>\
+		// 						</tr>';
+		// 		$('#chcgv_list').append(temp_html);
+		// 	}
 
-		});
+		// });
 
 		// 탭 바 클릭 이벤트
 
@@ -93,10 +94,10 @@
 			<nav>
 				<div class="tab">
 					<button class="tablinks active" onclick="open_chennel(event, 'home')">Home</button>
-					<button class="tablinks" onclick="open_chennel(event, 'chcgv')">CH CGV</button>
-					<button class="tablinks" onclick="open_chennel(event, 'ocn')">OCN</button>
-					<button class="tablinks" onclick="open_chennel(event, 'superaction')">Super Action</button>
+					<button class="tablinks" onclick="open_chennel(event, 'tv')">TV</button>
 					<button class="tablinks" onclick="open_chennel(event, 'moviechart')">Movie Chart</button>
+					<button class="tablinks" onclick="open_chennel(event, 'netflix')">Netflix</button>
+					<button class="tablinks" onclick="open_chennel(event, 'watchaplay')">Watcha Play</button>
 				</div>
 			</nav>
 		</header>
@@ -173,21 +174,26 @@
 
 			<!-- CH CGV -->
 
-			<div class="chcgv_bg">
-				<div id="chcgv" class="tabcontent">
+			<div class="tv_content">
+				<div id="tv" class="tabcontent">
 					<div class="main_text_ch">
-						<div class="title">
-							<h3>CH CGV</h3>
+						<div class="cgv_title">
+							<button type="button" class="chcgv_btn" onclick="show_table()">
+								<h3>CH CGV</h3>
+							</button>
 						</div>
-						<div class="sub_title">
-							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
-							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
+						<div class="cgv_open_box">
+							<div class="now_cgv_p">
+								<p>11:11&nbsp;&nbsp;&nbsp;인터스텔라</p>
+							</div>
+							<div id="go_ch_btn">
+								<button class="cgv_tv_btn" onclick="window.open('https://www.tving.com/live/player/C04601')">실시간 TV 보기</button>
+							</div>
 						</div>
-						<div id="go_ch_btn">
-							<button type="button" class="cgv_tv_btn" onclick="click()">채널 편성표</button>
-							<button type="button" class="cgv_tv_btn" onclick="window.open('https://www.tving.com/live/player/C04601')">실시간 TV 보기</button>
-						</div>
-						
+					</div>
+					<div class="tv_sub_title">
+						<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
+						오늘 볼 수 있는 영화를 한번에 모아보세요</p>
 					</div>
 					<div class="chcgv_table">
 						<table class="table_layout">
@@ -203,7 +209,126 @@
 								</tr>
 							</thead>
 							<tbody id="chcgv_list">
-								
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">스타워즈 에피소드 IV: 새로운 희망</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
+								<tr>
+									<td id="table_time">03:00</td>
+									<td id="table_title">인터스텔라</td>
+									<td id="table_age">15</td>
+									<td id="table_running_time">169</td>
+								</tr>
 							</tbody>
 							
 						</table>
@@ -214,7 +339,7 @@
 			<!-- OCN -->
 
 			<div class="ocn_bg">
-				<div id="ocn" class="tabcontent">
+				<div id="moviechart" class="tabcontent">
 					<div class="main_text_ch">
 						<div class="title">
 							<h3>OCN</h3>
@@ -237,7 +362,7 @@
 			<!-- Super Action -->
 
 			<div class="superaction_bg">
-				<div id="superaction" class="tabcontent">
+				<div id="netflix" class="tabcontent">
 					<div class="main_text_ch">
 						<div class="title">
 							<h3>Super Action</h3>
@@ -260,7 +385,7 @@
 			<!-- Movie Chart -->
 
 			<div class="moviechart_bg">
-				<div id="moviechart" class="tabcontent">
+				<div id="watchaplay" class="tabcontent">
 					<div class="main_text_ch">
 						<div class="title">
 							<h3>Movie Chart</h3>
