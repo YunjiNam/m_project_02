@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie Table</title>
+	<link rel="stylesheet" href="static/movie_table_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		
+		// 텍스트 롤링
+
+		$(document).ready(function(){
+			var height = $(".notice").height();
+			var num = $(".rolling_wrap_content li").length;
+			var max = height * num;
+			var move = 0;
+			function notice_rolling(){
+				move += height;
+				$(".rolling_wrap_content").animate({"top":-move},600,function(){
+					if( move >= max ){
+						$(this).css("top",0);
+						move = 0;
+					};
+				});
+			};
+			notice_rolling_off = setInterval(notice_rolling,2500);
+			$(".rolling_wrap_content").append($(".rolling_wrap_content li").first().clone());
+
+		})
+
+		// 이미지 애니메이션
+        
+
+
+	</script>
+</head>
+<body>
+	<div class="cover">
+		
+		<header>
+			<nav>
+				<div class="tab">
+					<button type="button" id="h_btn" class="tablinks" onclick="location.href='pro_movie_table.html'">Home</button>
+					<button type="button" id="c_btn" class="tablinks" onclick="location.href='pro_chcgv.html'">CH CGV</button>
+					<button type="button" id="o_btn" class="tablinks" onclick="location.href='pro_ocn.html'">OCN</button>
+					<button type="button" id="s_btn" class="tablinks" onclick="location.href='pro_superaction.html'">Super Action</button>
+					<button type="button" id="m_btn" class="tablinks" onclick="location.href='pro_moviechart.html'">Movie Chart</button>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="content">
+
+			<!-- Movie Table -->
+
+			<div class="movietable_bg">
+				<div id="home" class="tabcontent">
+					<div class="main_text">
+						<div class="title">
+							<h3>Movie Table</h3>
+						</div>
+						<div class="sub_title">
+							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
+							오늘 볼 수 있는 영화를 한번에 모아보세요</p>
+						</div>
+						<div class="NOP">
+							<p>Now On Play</p>
+						</div>
+						<div class="rolling_wrap">
+							<div class="notice">
+								<ul class="rolling_wrap_content">
+									<li>
+										<a href="https://www.tving.com/live/player/C04601" target="_blank">CH CGV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스타워즈 에피소드 IV: 새로운 희망</a>
+									</li>
+									<li>
+										<a href="https://www.tving.com/live/player/C07381" target="_blank">OCN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;토르:라그나로크 1부</a>
+									</li>
+									<li>
+										<a href="https://www.tving.com/live/player/C07382" target="_blank">Super Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;텍사스전기톱연쇄살인사건:더비기닝</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- <img src="static/main_img_movie.png"> -->
+					
+					<div id="camera_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img  id="camera_i" src="static/img/main_img_camera_res.png">
+						</div>
+					</div>
+					<div class="ticket_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/img/main_img_ticket_c_res.png">
+						</div>
+					</div>
+					<div class="ticket_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/img/main_img_ticket_res.png">
+						</div>
+					</div>
+					<div id="skittles_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/img/main_img_skittles_res.png">
+						</div>
+					</div>
+					<div id="toy_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/img/main_img_toy_res.png">
+						</div>
+					</div>
+					<div id="popcorn_i" class="img_move" style="position:absolute;">
+						<div style="position: relative; top:0px; left:0px;">
+							<img src="static/img/main_img_popcorn_res.png">
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

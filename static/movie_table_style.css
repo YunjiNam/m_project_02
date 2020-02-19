@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #2d2d2d;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ---------------------------------------------- top tab btn  */
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.tab {
+	overflow: hidden;
+	display: inline-block;
+
+	padding: 20px 20px;
+}
+
+.tab button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding:15px 0px;
+	margin:0px 110px;
+	font-weight: 700;
+	font-size: 15px;
+	color: #8c8c8c;
+}
+
+.tab button:hover {
+	border-bottom: 5px solid #ddd;
+}
+
+/*.tab button.active {
+	border-bottom: 5px solid #2d2d2d;
+}*/
+
+/* ----------------------------------------------tab btn hover active 밑줄 색 변경 */
+
+#h_btn {
+	border-bottom: 5px solid #8E28BD;
+	color: #2d2d2d;
+}
+
+.tabcontent {
+	width: 1620px;
+	height: 800px;
+	display: inline-block;
+
+}
+
+.movietable_bg {
+	height: 100%;
+    position: relative;
+	background-image: url("img/mainbg_img2.png");
+	background-size: auto;
+    background-position: center;
+}
+
+.tabcontent h3 {
+	font-weight: 900;
+	font-size: 50px;
+	color: #2d2d2d;
+}
+
+.tabcontent .sub_title {
+	font-weight: 400;
+	font-size: 20px;
+	color: #2d2d2d;
+	margin-top: 40px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg_img1 {
+	display: inline-block;
+}
+
+.main_text {
+	padding-top: 300px;
+	padding-left: 200px;
+	padding-bottom: 64px;
+	display: inline-block;
+}
+
+.main_text_ch {
+	padding-top: 300px;
+	padding-left: 200px;
+	padding-bottom: 200px;
+	display: inline-block;
+}
+/*.main_img1 {
+	float: right;
+	width: 800px;
+	display: inline-block;
+	cursor: pointer;
+}*/
+
+/* ----------------------------------------------Now On Play 현재 방영 영화 박스 */
+
+.NOP {
+	font-weight: 700;
+	font-size: 20px;
+	color: #2d2d2d;
+	margin-top: 85px;
+}
+
+.rolling_wrap {
+	width: 400px;
+	height: 70px;
+	border: 2px solid #8E28BD;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.notice {
+	width: 100%;
+	height: 36px;
+	margin: 15px 0;
+	overflow: hidden;
+}
+.rolling_wrap_content {
+	font-weight: 400;
+	font-size: 13px;
+	color: #2d2d2d;
+	list-style: none;
+	margin:0 54px;
+	position: relative;
+	height: auto;
+	width: 100%;
+}
+
+.rolling_wrap_content li {
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+}
+
+
+/* ----------------------------------------------  */
+
+/*.main_img1 {
+	float: right;
+	width: 800px;
+	margin-top: 40px;
+	display: inline-block;
+	cursor: pointer;
+}*/
+
+/*.main_img1:hover {
+	transform: scale( 1.05 );
+	transition-duration: 0.8s;
+}*/
+
+#camera_i {
+	float: right;
+	width: 570px;
+	margin: 0px 0px 100px 400px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+#popcorn_i {
+	float: right;
+	width: 500px;
+	margin: 380px 0px 0px 500px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+#skittles_i {
+	float: right;
+	width: 300px;
+	margin: 580px 0px 0px 330px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+#toy_i {
+	float: right;
+	width: 300px;
+	margin: 430px 0px 0px 330px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+.ticket_i {
+	float: right;
+	width: 300px;
+	margin: 470px 0px 0px 230px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.img_move:hover {
+	transform: scale( 1.02 );
+	transition-duration: 0.8s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

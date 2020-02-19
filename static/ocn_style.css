@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #2d2d2d;
+
+}
+
+/* ---------------------------------------------- top tab btn  */
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.tab {
+	overflow: hidden;
+	display: inline-block;
+
+	padding: 20px 20px;
+}
+
+.tab button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding:15px 0px;
+	margin:0px 110px;
+	font-weight: 700;
+	font-size: 15px;
+	color: #8c8c8c;
+}
+
+.tab button:hover {
+	border-bottom: 5px solid #ddd;
+}
+
+/*.tab button.active {
+	border-bottom: 5px solid #2d2d2d;
+}*/
+
+/* ----------------------------------------------tab btn hover active 밑줄 색 변경 */
+
+
+#o_btn {
+	border-bottom: 5px solid #FFB72F;
+	color: #2d2d2d;
+}
+
+.tabcontent {
+	width: 1620px;
+	height: 800px;
+	display: inline-block;
+
+}
+
+.tabcontent h3 {
+	font-weight: 900;
+	font-size: 50px;
+	color: #2d2d2d;
+}
+
+.tabcontent .sub_title {
+	font-weight: 400;
+	font-size: 20px;
+	color: #2d2d2d;
+	margin-top: 40px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg_img1 {
+	display: inline-block;
+}
+
+.main_text {
+	padding-top: 300px;
+	padding-left: 200px;
+	padding-bottom: 64px;
+	display: inline-block;
+}
+
+.main_text_ch {
+	padding-top: 300px;
+	padding-left: 200px;
+	padding-bottom: 200px;
+	display: inline-block;
+}
+/*.main_img1 {
+	float: right;
+	width: 800px;
+	display: inline-block;
+	cursor: pointer;
+}*/
+
+
+/* ----------------------------------------------각 채널 메뉴 background img */
+
+.ocn_bg {
+	height: 100%;
+    position: relative;
+	background-image: url("img/ocnbg_img2.png");
+	background-size: auto;
+    background-position: center;
+}
+
+
+/* ----------------------------------------------각 채널 실시간 tv 보러가기 btn  */
+
+.ocn_tv_btn {
+	/*width: 160px;
+	height: 55px;*/
+	outline: none;
+	padding: 12px 24px;
+	border-radius: 12px;
+	margin-top: 20px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #2d2d2d;
+	cursor: pointer;
+	border: 2px solid #FFB72F;
+	transition-duration: 0.5s;
+}
+.ocn_tv_btn:hover {
+	background-image: url("img/tv_btn1.png");
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ---------------------------------------------- 각 채널 편성표 테이블 디자인  */
+
+.ocn_table {
+	display: inline-block;
+	float: right;
+}
+
+.table_layout {
+	width: 740px;
+	/*height: auto;*/
+	text-align: center;
+	background-color: #ffffff;
+	/*opacity: 0.86;*/
+	/*box-shadow: 1px 1px 10px 1px #b3b3b3;*/
+	margin: 60px 200px 0px 0px;
+	border-radius: 10px;
+	border: 2px solid #F0352E;
+	padding: 20px;
+
+}
+
+table th {
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	padding: 13px 0px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+table td {
+	padding: 6px 5px;
+	font-size: 10px;
+	font-weight: 400;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
