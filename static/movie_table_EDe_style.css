@@ -111,6 +111,7 @@ header {
 	border: none;
 	display: inline-block;
 	margin: 7px 0px;
+	cursor: pointer;
 
 }
 
@@ -134,6 +135,7 @@ header {
 	border: none;
 	display: inline-block;
 	margin: 7px 0px;
+	cursor: pointer;
 
 }
 
@@ -147,6 +149,7 @@ header {
 	border: none;
 	display: inline-block;
 	margin: 7px 0px;
+	cursor: pointer;
 
 }
 
@@ -167,6 +170,7 @@ header {
 }
 
 .tv_sub_title p { font-size: 20px; font-weight: 400; }
+
 .ch_title h3 {
 	font-weight: 900;
 	font-size: 35px;
