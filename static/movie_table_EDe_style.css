@@ -102,25 +102,52 @@ header {
 }
 
 .chcgv_btn {
-	width: 500px;
-	height: 200px;
+	width: 450px;
+	height: 180px;
 	background-image: url("img/c_btn2.png");
 	background-size: 500px 380px;
 	border-radius: 15px;
 	overflow: hidden;
 	border: none;
-	display: none;
+	display: inline-block;
+	margin: 7px 0px;
 
 }
 
 .cgv_open_box {
-	width: 500px;
-	height: 380px;
+	width: 450px;
+	height: 180px;
 	background-image: url("img/c_btn2.png");
 	background-size: 500px 380px;
 	border-radius: 15px;
 	overflow: hidden;
 	border: none;
+}
+
+.ocn_btn {
+	width: 450px;
+	height: 180px;
+	background-image: url("img/o_btn1.png");
+	background-size: 500px 380px;
+	border-radius: 15px;
+	overflow: hidden;
+	border: none;
+	display: inline-block;
+	margin: 7px 0px;
+
+}
+
+.superaction_btn {
+	width: 450px;
+	height: 180px;
+	background-image: url("img/s_btn1.png");
+	background-size: 500px 380px;
+	border-radius: 15px;
+	overflow: hidden;
+	border: none;
+	display: inline-block;
+	margin: 7px 0px;
+
 }
 
 .tv_sub_title {
@@ -130,12 +157,19 @@ header {
 	margin-top: 40px;
 	float: right;
 	text-align: center;
-	margin: 400px 300px 300px 0px;
+	margin: 300px 320px 300px 0px;
 }
 
-.chcgv_btn h3 {
+.tv_sub_title h3 {
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.tv_sub_title p { font-size: 20px; font-weight: 400; }
+.ch_title h3 {
 	font-weight: 900;
-	font-size: 50px;
+	font-size: 35px;
 	color: #ffffff;
 }
 
@@ -171,9 +205,9 @@ header {
 }
 
 .main_text_ch {
-	padding-top: 300px;
+	padding-top: 100px;
 	padding-left: 200px;
-	padding-bottom: 200px;
+	padding-bottom: 100px;
 	display: inline-block;
 }
 /*.main_img1 {
@@ -343,8 +377,8 @@ a {
 /* ---------------------------------------------- 각 채널 편성표 테이블 디자인  */
 
 .chcgv_table {
-	/*display: inline-block;*/
-	display: none;
+	display: inline-block;
+	/*display: none;*/
 	float: right;
 }
 
