@@ -83,6 +83,7 @@
 
 		})
         
+        
 
 
 	</script>
@@ -178,34 +179,35 @@
 				<div id="tv" class="tabcontent">
 					<div class="main_text_ch">
 						<div class="ch_title">
-							<button type="button" class="chcgv_btn" onclick="show_table()">
+							<button type="button" class="chcgv_btn" onclick="show_cgvtable()">
 								<h3>CH CGV</h3>
 							</button>
 						</div>
-						<div class="ch_title">
-							<button type="button" class="ocn_btn" onclick="show_table()">
-								<h3>OCN</h3>
-							</button>
-						</div>
-						<div class="ch_title">
-							<button type="button" class="superaction_btn" onclick="show_table()">
-								<h3>Super Action</h3>
-							</button>
-						</div>
-						<!-- <div class="cgv_open_box">
+						<div class="cgv_open_box">
 							<div class="now_cgv_p">
 								<p>11:11&nbsp;&nbsp;&nbsp;인터스텔라</p>
 							</div>
 							<div id="go_ch_btn">
 								<button class="cgv_tv_btn" onclick="window.open('https://www.tving.com/live/player/C04601')">실시간 TV 보기</button>
 							</div>
-						</div> -->
+						</div>
+						<div class="ch_title">
+							<button type="button" class="ocn_btn" onclick="show_ocntable()">
+								<h3>OCN</h3>
+							</button>
+						</div>
+						<div class="ch_title">
+							<button type="button" class="superaction_btn" onclick="show_superactiontable()">
+								<h3>Super Action</h3>
+							</button>
+						</div>
+						
 					</div>
-					<!-- <div class="tv_sub_title">
+					<div class="tv_sub_title">
 						<h3> TV 편성표</h3>
 						<p>오늘 하루 무슨 영화를 볼지 고민이 된다면<br>
 						오늘 볼 수 있는 영화를 한 번에 모아보세요</p>
-					</div> -->
+					</div>
 					<div class="chcgv_table">
 						<table class="table_layout">
 							<colgroup>
@@ -351,9 +353,9 @@
 
 			<div class="ocn_bg">
 				<div id="moviechart" class="tabcontent">
-					<div class="main_text_ch">
+					<div class="main_text">
 						<div class="title">
-							<h3>OCN</h3>
+							<h3>Movie Chart</h3>
 						</div>
 						<div class="sub_title">
 							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
@@ -374,9 +376,9 @@
 
 			<div class="superaction_bg">
 				<div id="netflix" class="tabcontent">
-					<div class="main_text_ch">
+					<div class="main_text">
 						<div class="title">
-							<h3>Super Action</h3>
+							<h3>Netflix</h3>
 						</div>
 						<div class="sub_title">
 							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>
@@ -397,9 +399,9 @@
 
 			<div class="moviechart_bg">
 				<div id="watchaplay" class="tabcontent">
-					<div class="main_text_ch">
+					<div class="main_text">
 						<div class="title">
-							<h3>Movie Chart</h3>
+							<h3>Watcha Play</h3>
 						</div>
 						<div class="sub_title">
 							<p>오늘 무슨 영화를 볼 지 고민이 된다면<br>

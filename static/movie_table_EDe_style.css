@@ -117,12 +117,12 @@ header {
 
 .cgv_open_box {
 	width: 450px;
-	height: 180px;
+	height: 280px;
 	background-image: url("img/c_btn2.png");
 	background-size: 500px 380px;
 	border-radius: 15px;
-	overflow: hidden;
 	border: none;
+	display: none;
 }
 
 .ocn_btn {
@@ -271,7 +271,7 @@ header {
     background-position: center;
 }
 
-.ocn_bg {
+/*.ocn_bg {
 	height: 100%;
     position: relative;
 	background-image: url("img/ocnbg_img2.png");
@@ -293,7 +293,7 @@ header {
 	background-image: url("img/moviechartbg_img2.png");
 	background-size: auto;
     background-position: center;
-}
+}*/
 
 /* ----------------------------------------------각 채널 실시간 tv 보러가기 btn  */
 
@@ -381,8 +381,8 @@ a {
 /* ---------------------------------------------- 각 채널 편성표 테이블 디자인  */
 
 .chcgv_table {
-	display: inline-block;
-	/*display: none;*/
+	/*display: inline-block;*/
+	display: none;
 	float: right;
 }
 
